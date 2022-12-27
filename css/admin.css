@@ -1,0 +1,166 @@
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, 600px));
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+/* @media (max-width:1200px) {
+    .boxes {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+} */
+
+.boxes .box {
+    border-radius: 10px;
+    background-color: var(--mini-white);
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box .toggle-con {
+    cursor: pointer;
+    margin-top: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.box .toggle-con:hover .change-dark {
+    box-shadow: 2px 2px 3px #999;
+    transform: translateY(-3px) scale(1.05);
+}
+
+.box .toggle-con .change-dark {
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--beuty-white) 80%, var(--black));
+    color: var(--main-color);
+    font-weight: 800;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.box .toggle-con .change-dark.can {
+    background-image: linear-gradient(to right, var(--black) 10%, var(--beuty-white));
+}
+
+.box .colors {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(90px, 120px));
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 10px;
+    row-gap: 20px;
+}
+
+@media (max-width:1200px) {
+    .box .colors {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    }
+}
+
+.box .colors .col {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    cursor: pointer;
+    background-color: var(--bc-main-coloer);
+    border-radius: 10px;
+    color: var(--bc-main-coloer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.box .colors .col.active {
+    outline: 3px solid var(--beuty-blue);
+    color: var(--beuty-blue);
+    font-weight: 800;
+}
+
+.box .change {
+    width: 50%;
+    height: 35px;
+    margin: auto;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--beuty-white) 50%, var(--main-color));
+    color: var(--main-color);
+    font-weight: 800;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box .change:hover {
+    box-shadow: 2px 2px 3px #999;
+    transform: translateY(-3px) scale(1.05);
+}
+
+.box .colors-body {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(90px, 120px));
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+
+@media (max-width:1200px) {
+    .box .colors-body {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    }
+}
+
+.box .colors-body .col-body {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    cursor: pointer;
+    background-color: var(--bc-main-coloer);
+    border-radius: 10px;
+    color: var(--bc-main-coloer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.box .colors-body .col-body.active {
+    outline: 3px solid var(--beuty-blue);
+    color: var(--beuty-blue);
+    font-weight: 800;
+}
+
+.box .change-body {
+    width: 50%;
+    height: 35px;
+    margin: auto;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--beuty-white) 50%, var(--main-color));
+    color: var(--main-color);
+    font-weight: 800;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box .change-body:hover {
+    box-shadow: 2px 2px 3px #999;
+    transform: translateY(-3px) scale(1.05);
+}
